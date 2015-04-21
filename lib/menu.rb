@@ -12,4 +12,10 @@ class Menu
     list[book.name] = book.price
   end
 
+  def show_me
+    @list.each do |key, value|
+      return "#{key} = £#{value}"
+    end
+  end
+
 end

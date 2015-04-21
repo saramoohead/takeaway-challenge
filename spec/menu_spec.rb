@@ -8,4 +8,9 @@ describe Menu do
     menu.add(book)
     expect(menu.list).to eq('Clockwise to Titan' => 6)
   end
+
+  it 'can display the list of books' do
+    menu.add(book)
+    expect(menu.show_me).to eq('Clockwise to Titan = £6')
+  end
 end
