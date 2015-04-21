@@ -9,13 +9,11 @@ class Menu
   end
 
   def add(book)
-    list[book.name] = book.price
+    @list[book.name] = book.price
   end
 
   def show_me
-    @list.each do |key, value|
-      return "#{key} = £#{value}"
-    end
+    @list.each_with_index { |(key, value), i| "Book #{i} is #{key} = £#{value}" }
   end
 
 end
