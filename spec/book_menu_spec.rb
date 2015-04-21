@@ -1,6 +1,6 @@
 require 'menu'
 
-describe Menu do
+describe BookMenu do
   let(:menu) { described_class.new }
   let(:book) { double :book, name: 'Clockwise to Titan', price: 6 }
   let(:book2) { double :book2, name: 'The Knife of Never Letting Go', price: 8 }

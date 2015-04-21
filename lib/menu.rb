@@ -1,6 +1,6 @@
 require_relative 'book'
 
-class Menu
+class BookMenu
 
   attr_reader :list
 
@@ -13,7 +13,7 @@ class Menu
   end
 
   def show_me
-    @list.each_with_index { |(key, value), i| "Book #{i} is #{key} = £#{value}" }
+    @list.each_with_index { |(key, value), i| puts "Book #{i} is #{key} = £#{value}" }
   end
 
 end
